@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECO ZEN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        nav {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+        .carousel img {
+            max-height: 70vh;
+            object-fit: cover;
+        }
+        .button-container .btn {
+            width: 100%;
+            max-width: 250px;
+            margin: 10px;
+        }
+        .map {
+            width: 100%;
+            height: 15rem;
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 30px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .testimonial-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            background-color: lightskyblue;
+            transition: 0.5s ease-in-out;
+        }
+        .testimonial-item:hover {
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            transform: scale(1.1);
+        }
+        .testimonial-item p {
+            font-style: italic;
+            color: #555;
+            transition: 0.5s ease-in-out;
+        }
+        .testimonial-item p.fw-bold {
+            color: #007bff;
+            margin-top: 10px;
+            transition: 0.5s ease-in-out;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-check {
+            margin-bottom: 10px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004080;
+        }
+        .footerr {
+            margin-top: 46px;
+        }
+        .social-icons {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/rebin_najeeb/" target="_blank" class="bi bi-instagram"></a>
+        <a href="https://www.linkedin.com/in/rebin-najeeb/" target="_blank" class="bi bi-linkedin"></a>
+        <a href="mailto:rebinnajeeb2@gmail.com" class="bi bi-envelope-fill"></a>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-warning fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-white" href="#">ECO ZEN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Deals
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class='dropdown-item' href='cloth.html'>Clothing</a></li>
+                            <li><a class='dropdown-item' href='bathroom.html'>Toiletries</a></li>
+                            <li><a class='dropdown-item' href='house.html'>Home Accessories</a></li>
+                            <li><a class='dropdown-item' href='learn.html'>Learn</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#loc">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class='nav-link' href='demo.html'>About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="brush.jpg" class="d-block w-100" alt="Household essentials">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-white">Household Essentials</h2>
+                    <p class="text-white">Once you own, always own</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="cloth.jpg" class="d-block w-100" alt="Fashion accessories">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-white">Fashion</h2>
+                    <p class="text-white">The best is all ours</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="home">
+                <img src="tube.jpg" class="d-block w-100" alt="Herbal medicines">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-white">Herbal Medicines</h2>
+                    <p class="text-white">No more medicine than green</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container text-center mt-5">
+        <h2 class="fw-bold text-warning" id="order">ORDER NOW..!</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 d-flex justify-content-center mb-3">
+                <a class='btn btn-primary w-100' href='house.html'>Household Utensils</a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-3">
+                <a class='btn btn-primary w-100' href='cloth.html'>Clothes</a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-3">
+                <a class='btn btn-primary w-100' href='bathroom.html'>Toiletries</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 form-container">
+        <h3 class="text-center mb-4">Place Your Order</h3>
+        <form>
+            <div class="mb-3 row">
+                <label for="inputName" class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPhone" class="col-sm-3 col-form-label">Phone Number</label>
+                <div class="col-sm-9">
+                    <input type="tel" class="form-control" id="inputPhone" placeholder="Your Phone Number" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPlace" class="col-sm-3 col-form-label">Place</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputPlace" placeholder="Your Place" required>
+                </div>
+            </div>
+            <fieldset class="mb-3 row">
+                <legend class="col-form-label col-sm-3 pt-0">Gender</legend>
+                <div class="col-sm-9">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="product" id="productClothes" value="clothes" checked required>
+                        <label class="form-check-label" for="productClothes">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="product" id="productToiletries" value="toiletries">
+                        <label class="form-check-label" for="productToiletries">Female</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="product" id="productAccessories" value="accessories">
+                        <label class="form-check-label" for="productAccessories">Do not wish to disclose</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </div>
+        </form>
+    </div>
+
+    <section id="testimonials" class="mt-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5 text-success">WHAT OUR CLIENTS SAY</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-item">
+                        <p>"Eco Zen's products are of unmatched quality. They truly stand by their motto."</p>
+                        <p class="fw-bold">- Jane Doe</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-item">
+                        <p>"A fantastic service with a product range that's both extensive and eco-friendly!"</p>
+                        <p class="fw-bold">- John Smith</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-item">
+                        <p>"The best green products I've ever used. Eco Zen is now my go-to brand."</p>
+                        <p class="fw-bold">- Sarah Lee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <h2 class="text-center" id="loc">LOCATION</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Kochi</h4>
+                    <h4>Kerala</h4>
+                    <p><i class="bi bi-telephone-inbound"></i> 9400591956</p>
+                    <p><i class="bi bi-envelope-fill"></i> rebinnajeeb2@gmail.com</p>
+                    <p><i class="bi bi-search"></i> www.greenearth.com</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3212.080505746022!2d78.042214!3d27.173134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e1!3m2!1sen!2sus!4v1719299497992!5m2!1sen!2sus" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">&copy; 2024 Eco Zen Corp. All rights reserved.</p>
+                <p>Follow us on <a href="#"><i class="bi bi-facebook"></i> Facebook</a>, <a href="https://www.linkedin.com/in/rebin-najeeb/"><i class="bi bi-linkedin"></i> Linkedin</a>, and <a href="https://www.instagram.com/rebin_najeeb/"><i class="bi bi-instagram"></i> Instagram</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function message() {
+            alert("Are you sure you want to confirm?");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

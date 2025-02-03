@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Bathroom Essentials</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #e3ffe7, #d9e7ff);
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: #0056b3;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .container-fluid {
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .product-card {
+            border: none;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 15px;
+            background: linear-gradient(to right, #ffffff, #f2f2f2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease-in-out;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.5s ease-in-out, filter 0.5s;
+            filter: brightness(90%);
+        }
+
+        .product-card img:hover {
+            transform: scale(1.1);
+            filter: brightness(100%);
+        }
+
+        .product-buttons {
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .btn {
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 12px 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #1e7e34;
+            transform: translateY(-3px);
+        }
+
+        .product-card h5 {
+            font-size: 1.3rem;
+            color: #007bff;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .text-muted {
+            color: #6c757d !important;
+            text-decoration: line-through;
+        }
+
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+            border-radius: 0 5px 5px 0;
+            margin-bottom: 5px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .facebook {
+            background: #3b5998;
+        }
+
+        .twitter {
+            background: #55acee;
+        }
+
+        .instagram {
+            background: #e4405f;
+        }
+
+        .linkedin {
+            background: #0077b5;
+        }
+
+        .whatsapp {
+            background: #25d366;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <h2 class="text-center">Luxury Bathroom Essentials</h2><br>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="shampoo.jpg" alt="Herbal Shampoo">
+                    <h5>Herbal Shampoo</h5>
+                    <p>With natural conditioner, gentle on hair.</p>
+                    <p>Rs. 200 <span class="text-muted">Rs. 1,650</span></p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="cocunut oil.jpg" alt="Coconut Oil">
+                    <h5>Cocunut Oil</h5>
+                    <p>Pure coconut oil for healthy hair and skin.</p>
+                    <p>Rs. 140 <span class="text-muted">Rs. 1,650</span></p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="comb.jpg" alt="Hair Brush">
+                    <h5>Hair Brush</h5>
+                    <p>Gentle on scalp, perfect for daily use.</p>
+                    <p>Rs. 300 <span class="text-muted">Rs. 2,250</span></p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="soap.jpg" alt="Herbal Soap">
+                    <h5>Herbal Soap</h5>
+                    <p>Refreshing herbal soap with natural extracts.</p>
+                    <p>Rs. 215 <span class="text-muted">Rs. 2,350</span></p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="perfume.jpg" alt="Toilet Perfume">
+                    <h5>Toilet Perfumes</h5>
+                    <p>Keep your bathroom fresh and fragrant.</p>
+                    <p>Rs. 400</p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="product-card">
+                    <img src="bamboo toothbrush.jpg" alt="Bamboo Toothbrush">
+                    <h5>Bamboo Toothbrush</h5>
+                    <p>Eco-friendly toothbrush for sustainable living.</p>
+                    <p>Rs. 200</p>
+                    <div class="product-buttons">
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+       
