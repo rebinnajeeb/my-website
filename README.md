@@ -2,6 +2,8 @@
 
 **ECOZEN Fashion** is an eco-friendly e-commerce platform that provides sustainable fashion choices for environmentally-conscious consumers. The platform allows users to browse a variety of eco-friendly fashion products, such as clothing made from organic or recycled materials, while promoting sustainability through ethical consumption.
 
+*Website link:https://eco-zen.netlify.app/
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
